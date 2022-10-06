@@ -10,7 +10,7 @@ function Aboutus() {
     <div className='aboutus'>
     </div>
     <div className='contain mt-2'>
-    <p class="line-1 anim-typewriter fw-bold">A platform to share your ideas, stories and more</p>
+    <p class="line-1 anim-typewriter fw-bold">A platform to share your ideas, stories & more</p>
     </div>
     <div className='d-flex justify-content-center text-center mt-2'>
         <p className='w-50'>
