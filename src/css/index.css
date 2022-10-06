@@ -1,0 +1,162 @@
+body, html{
+  height: 100%;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #4e3524;
+  }
+  .brown{
+      background-color: #4e3524; 
+      color: #f2f2f2;
+  }
+  .color-brown{
+      color:#4e3524;
+  }
+ .light-brown{
+  background-color: #f3d2b7;
+ }
+  /* Add a gray background color and some padding to the footer */
+  /* footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  } */
+  
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+    max-height: 70vh;
+}
+.logo{
+  color: #B6977D;
+font-size: 1.7rem;
+font-weight: bold;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.carousel-caption {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.5rem;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 991px) {
+
+  .column{
+    flex-direction: column;
+  }
+ 
+}
+.search-result-categories>li>a {
+  color: black;
+  font-weight: 400
+}
+
+.search-result-categories>li>a:hover {
+  background-color: #B6977D;
+  color: black
+}
+
+.search-result-categories>li>a>.glyphicon {
+  margin-right: 5px
+}
+
+.search-result-categories>li>a>.badge {
+  float: right
+}
+
+.search-results-count {
+  margin-top: 10px
+}
+
+
+
+.post-shadow {
+  box-shadow: 0 0 5px 0px gray;
+  background-color: beige;
+  cursor:pointer;
+}
+.post-item {
+ 
+  max-width:230px;
+  height: 150px;
+  
+}
+/* .content {
+  height: 100vh;
+} */
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100vh;
+  /* padding:80px; */
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+      height: auto;
+      padding: 15px;
+  }
+
+  .row.content {
+      height: auto;
+  }
+}
+.contain{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* animations */
+.line-1{
+  /* position: relative;  
+  top:100%; */
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid black;
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translateY(-50%);     */
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: black;}
+to{border-right-color: white;}
+}
+
+.aboutus{
+  background-image: url('./about-us.jpg');
+  background-position: center;
+  background-size: cover;
+  height:20vh;
+}
