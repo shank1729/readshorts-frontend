@@ -116,7 +116,7 @@ export default function PostWrite() {
     };
     const handleSubmit = (event) => {
         event.preventDefault();
-        let URL = "https://sheltered-sea-15851.herokuapp.com/api/add-post";
+        let URL = "https://readshorts-backend.onrender.com/api/add-post";
         
         axios.post(URL, post).then((response) => {
             console.log(response.status);

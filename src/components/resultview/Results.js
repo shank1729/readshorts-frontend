@@ -18,17 +18,17 @@ function Results() {
         // setSearchPar(searchParams.getAll());
     }
     let getPostDetails = async () => {
-        let URL = "https://sheltered-sea-15851.herokuapp.com/api/get-post";
+        let URL = "https://readshorts-backend.onrender.com/api/get-post";
 
         if (searchParams.get("type") ) {
 
             let type = searchParams.get("type");
             
-            URL = "https://sheltered-sea-15851.herokuapp.com/api/get-post?typ=" + type;
+            URL = "https://readshorts-backend.onrender.com/api/get-post?typ=" + type;
             if(searchParams.get("category_id"))
             {
                 let id=searchParams.get("category_id");
-                URL = "https://sheltered-sea-15851.herokuapp.com/api/get-post?typ=" + type + "&id=" + id;
+                URL = "https://readshorts-backend.onrender.com/api/get-post?typ=" + type + "&id=" + id;
             }
             setType(type);
             setTitle(type === "blog" ? "Blogs" : type === "article" ? "Articles" : type === "story" ? "Stories" : "Posts");
@@ -45,7 +45,7 @@ function Results() {
         }
     }
     let getCategoryData = async () => {
-        let URL = 'https://sheltered-sea-15851.herokuapp.com/api/get-category';
+        let URL = 'https://readshorts-backend.onrender.com/api/get-category';
 
 
         try {

@@ -15,7 +15,7 @@ function Posts() {
     }
 
     let getBlogData = async () => {
-        let URL = 'https://sheltered-sea-15851.herokuapp.com/api/get-blog';
+        let URL = 'https://readshorts-backend.onrender.com/api/get-blog';
 
 
         try {
@@ -33,7 +33,7 @@ function Posts() {
         }
     };
     let getStoryData = async () => {
-        let URL = 'https://sheltered-sea-15851.herokuapp.com/api/get-story';
+        let URL = 'https://readshorts-backend.onrender.com/api/get-story';
 
 
         try {
@@ -51,7 +51,7 @@ function Posts() {
         }
     };
     let getArticleData = async () => {
-        let URL = 'https://sheltered-sea-15851.herokuapp.com/api/get-article';
+        let URL = 'https://readshorts-backend.onrender.com/api/get-article';
 
 
         try {

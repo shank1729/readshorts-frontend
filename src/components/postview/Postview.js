@@ -28,7 +28,7 @@ export default function Postview() {
     };
     let [pDetails, setPDetails] = useState({ ...initPost });
     let getPostDetails = async () => {
-        let URL = "https://sheltered-sea-15851.herokuapp.com/api/get-post-by-id/" + params.id;
+        let URL = "https://readshorts-backend.onrender.com/api/get-post-by-id/" + params.id;
         console.log(URL)
         try {
             let response = await axios.get(URL);
