@@ -15,6 +15,7 @@ function PostItems(props) {
       <img
         src={post.main_img}
         className="img-fluid post-image"
+        loading="lazy"
         alt={post.title}
       />
 
